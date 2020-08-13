@@ -337,7 +337,7 @@ AdjacencyList<Key> AdjacencyList<Key>::kruskal_algo() const {
 	AdjacencyList minmal_spanning_tree;
 	for (size_type i{ 0 }; i < sz; ++i) minmal_spanning_tree.add_edge(list[i].edge);
 	
-	//							weight								from			to
+	//		weight		    from	to
 	std::multimap<size_type, std::pair<key_type, key_type>> map;
 
 	for (size_type i{ 0 }; i < sz; ++i) {
